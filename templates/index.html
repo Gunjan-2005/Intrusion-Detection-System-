@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intrusion Detection System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Intrusion Detection System</h1>
+
+        <h2>Manual Input of Features</h2>
+        <form id="predictForm">
+            <div class="form-grid" id="featureInputs"></div>
+            <button type="submit">Predict</button>
+        </form>
+
+        <h2>Or Upload JSON File</h2>
+        <input type="file" id="jsonFile">
+        <button onclick="predictFile()">Predict from File</button>
+
+        <div id="result"></div>
+    </div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
